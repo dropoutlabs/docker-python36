@@ -10,6 +10,10 @@ See example directory
 
 0. (pip install -r requirements.txt)
 
+0. get ansible-container from source
+
+        ansible-container ((dc74365...)) $ pip install -e .[docker]
+
 1. ansible-container build --debug
 
 # How to publish
