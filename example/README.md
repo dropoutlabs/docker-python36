@@ -1,5 +1,9 @@
 # example
 
+THIS HAS BEEN INCORPORATED INTO TEMPLATE IN ROOT FOLDER ITSELF
+
+THIS SHOULD WORK AS OF #ecdf3f8
+
 How to use dropoutlabs/python36-and-jupyter-notebook docker container
 
 0. build example docker

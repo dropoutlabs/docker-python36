@@ -1,0 +1,24 @@
+- file:
+    path: /root/.jupyter
+    state: directory
+
+- template:
+    src: jupyter_notebook_config.py.j2
+    dest: /root/.jupyter/jupyter_notebook_config.py
+
+- template:
+    src: jupyter-notebook.sh.j2
+    dest: /usr/bin/jupyter-notebook.sh
+
+- file:
+    path: /usr/bin/jupyter-notebook.sh
+    mode: "u=rwx,g=rx,o=rx"
+
+- apt:
+    name: iproute2
+    state: present
+
+
+
+    
+

@@ -28,11 +28,15 @@ services:
     roles:
       - dropoutlabs.dumb-init
       - dropoutlabs.python36-and-jupyter
+      - myjupyter
     ports:
       - "8888:8888"
     environment:
       - FOO=/tmp
-    command: ["/usr/bin/dumb-init", "jupyter", "notebook"]
+    # ???
+    volumes:
+      - $PWD:/work
+    command: ["/usr/bin/dumb-init", "jupyter-notebook.sh"]
     # dev_overrides:
     #   environment:
     #     - "DEBUG=1"

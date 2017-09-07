@@ -59,7 +59,7 @@
 #c.NotebookApp.allow_origin_pat = ''
 
 ## Whether to allow the user to run the notebook as root.
-#c.NotebookApp.allow_root = False
+c.NotebookApp.allow_root = True
 
 ## DEPRECATED use base_url
 #c.NotebookApp.base_project_url = '/'
@@ -258,7 +258,7 @@
 #  
 #  Setting to an empty string disables authentication altogether, which is NOT
 #  RECOMMENDED.
-#c.NotebookApp.token = '<generated>'
+c.NotebookApp.token = ''
 
 ## Supply overrides for the tornado.web.Application that the Jupyter notebook
 #  uses.
