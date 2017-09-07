@@ -2,6 +2,10 @@
 
 Insecure ansible container with Python 3.6 and Jupyter
 
+# How to use
+
+See example directory
+
 # How to (re-)build
 
 0. (pip install -r requirements.txt)
